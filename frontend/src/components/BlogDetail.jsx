@@ -23,7 +23,7 @@ function BlogDetail  (props)  {
     const createBlog = () =>{
         return {__html: blog.content}
     };
-    const capitlizeFirstletter = (word) =>{
+    const capitalizeFirstletter = (word) =>{
         if(word)
             return word.charAt(0).toUpperCase() + word.slice(1);
         return '';
@@ -32,7 +32,7 @@ function BlogDetail  (props)  {
     return (
         <div className="container mt-3">
             <h1 className="display-2">{blog.title}</h1>
-            <h2 className="text-muted ht-3">Category: {capitlizeFirstletter(blog.category)}</h2>
+            <h2 className="text-muted ht-3">Category: {capitalizeFirstletter(blog.category)}</h2>
             <h4>{blog.day} {blog.month }</h4>
             <div className="mt-5 mb-5" dangerouslySetInnerHTML={createBlog()} />
             <hr />
