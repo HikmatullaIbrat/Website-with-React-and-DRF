@@ -11,8 +11,8 @@ const App = () => (
       <Layout>
         <Routes>
           <Route path="/"             element={<Home />} />
-          <Route path="/blog"         element={<Blog />} />
-          <Route path="/category/:id" element={<Category />} />
+          <Route path="/blogs"         element={<Blog />} />
+          <Route path="blogs/category/:id" element={<Category />} />
           <Route path="/blog/:id"     element={<BlogDetail />} />
         </Routes>
       </Layout>

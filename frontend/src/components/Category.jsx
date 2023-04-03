@@ -78,18 +78,18 @@ function Category  (props) {
         <h3 className="display-4">{currentCategory} Category</h3>
         <div className="nav-scroller py-1 mb-2">
             <nav className="nav d-flex justify-content-between">
-                <Link className="p-2 link-secondary" to="category/world">World</Link>
-                <Link className="p-2 link-secondary" to="category/environment">Environment</Link>
-                <Link className="p-2 link-secondary" to="category/technology">Technology</Link>
-                <Link className="p-2 link-secondary" to="category/design">Design</Link>
-                <Link className="p-2 link-secondary" to="category/culture">Culture</Link>
-                <Link className="p-2 link-secondary" to="category/business">Business</Link>
-                <Link className="p-2 link-secondary" to="category/politics">Politics</Link>
-                <Link className="p-2 link-secondary" to="category/opinion">Opinion</Link>
-                <Link className="p-2 link-secondary" to="category/science">Science</Link>
-                <Link className="p-2 link-secondary" to="category/health">Health</Link>
-                <Link className="p-2 link-secondary" to="category/style">Style</Link>
-                <Link className="p-2 link-secondary" to="category/travle">Travel</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/world`}>World</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/environment`}>Environment</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/technology`}>Technology</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/design`}>Design</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/culture`}>Culture</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/business`}>Business</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/politics`}>Politics</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/opinion`}>Opinion</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/science`}>Science</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/health`}>Health</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/style`}>Style</Link>
+                <Link className="p-2 link-secondary" to={`/blogs/category/travel`}>Travel</Link>
             </nav>
         </div>
         {getCategoryBlogs()}

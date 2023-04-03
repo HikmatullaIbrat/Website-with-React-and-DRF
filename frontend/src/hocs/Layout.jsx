@@ -1,10 +1,17 @@
 import React from 'react';
 import Navbar from '../components/Navbar'
+import TopBar from '../components/TopBar';
+import Footer from '../components/Footer'
 const layout = (props) => (
-    <div>
+    <>
+        <TopBar />
         <Navbar />
+        
         {props.children}
-    </div>
+        <Footer />
+        
+
+    </>
 );
 
 export default layout;
